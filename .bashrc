@@ -1,4 +1,4 @@
-if [[ "$PWD" == '/c/WINDOWS/System32' ]]; then
+if [[ "$PWD" == '/c/WINDOWS/system32' ]]; then
         cd '/c/Users/James/Documents'
 fi
 
