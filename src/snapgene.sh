@@ -4,7 +4,7 @@
 # open snapgene without file
 if [ $# -eq 0 ]; then
     {
-        start "" 'C:\Program Files\snapgene\SnapGene.exe'
+        start "" 'C:\Program Files (x86)\SnapGene\SnapGene.exe'
         exit 0
     } || {
         echo "Snapgene not found, check path."
@@ -19,7 +19,7 @@ if ! [[ -f $1 ]] ; then
 fi
 
 # check file is compatible with snapgene
-if [[ $1 != *.fasta ]] && [[ $1 != *.fas ]] && [[ $1 != *.fa ]] &&  [[ $1 != *.gb ]] && [[ $1 != *.dna ]] && [[ 
+if [[ $1 != *.fasta ]] && [[ $1 != *.fas ]] && [[ $1 != *.fa ]] &&  [[ $1 != *.gb ]] && [[ $1 != *.dna ]] && [[
 $1 != *.gbk ]]; then
     echo "File format is not compatible."
     echo "Compatible formats: .fasta, .fas, .fa, .gb, .gbk, .dna "
@@ -28,7 +28,7 @@ fi
 
 # handle bad snapgene path error
 {
-    start "" 'C:\Program Files\snapgene\SnapGene.exe' $1
+    start "" 'C:\Program Files (x86)\SnapGene\SnapGene.exe' $1
     exit 0
 } || {
     echo "Snapgene not found, check path."
