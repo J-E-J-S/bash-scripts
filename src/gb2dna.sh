@@ -1,5 +1,7 @@
 #!/bin/bash
-# converts accepted files to .dna, snapgene must be closed to use
+# Converts accepted files to .dna, snapgene must be closed to use
+# Compatible with SnapGene V4.1.9
+# Not Compatible with SnapGene V6 (Change line 28 to -c 'SnapGene')
 
 inputFile=$1
 outputFile=$inputFile
