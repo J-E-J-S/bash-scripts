@@ -23,7 +23,7 @@ while getopts ":h" opt; do
     esac
 done
 
-"/c/Program Files/SnapGene/SnapGene.exe" -c 'SnapGene' -i $inputFile -o $outputFile
+"/c/Program Files (x86)/SnapGene/SnapGene.exe" -c 'SnapGene DNA' -i $inputFile -o $outputFile
 if [[ $? -eq 0 ]]
 then
     exit 0
