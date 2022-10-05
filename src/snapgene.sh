@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 # opens a file with snapgene
 
 # open snapgene without file
 if [ $# -eq 0 ]; then
     {
-        start "" 'C:\Program Files (x86)\SnapGene\SnapGene.exe'
+        '/Applications/SnapGene.app/Contents/MacOS/SnapGene'
         exit 0
     } || {
         echo "Snapgene not found, check path."
@@ -28,7 +28,7 @@ fi
 
 # handle bad snapgene path error
 {
-    start "" 'C:\Program Files (x86)\SnapGene\SnapGene.exe' $1
+    '/Applications/SnapGene.app/Contents/MacOS/SnapGene' $1
     exit 0
 } || {
     echo "Snapgene not found, check path."
