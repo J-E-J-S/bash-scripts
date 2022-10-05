@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 # Converts accepted files to .dna, snapgene must be closed to use
 # Compatible with SnapGene V4.1.9
 # Not Compatible with SnapGene V6 (Change line 28 to -c 'SnapGene')
@@ -25,7 +25,7 @@ while getopts ":h" opt; do
     esac
 done
 
-"/c/Program Files (x86)/SnapGene/SnapGene.exe" -c 'SnapGene DNA' -i $inputFile -o $outputFile
+"/Applications/SnapGene.app/Contents/MacOS/SnapGene" -c 'SnapGene DNA' -i $inputFile -o $outputFile
 if [[ $? -eq 0 ]]
 then
     exit 0
