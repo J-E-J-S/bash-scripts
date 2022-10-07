@@ -10,3 +10,4 @@ e.g `alias snapgene='/usr/bin/snapgene.sh';`
 `snapgene.sh` --> Open a file (.fasta, .fas, .fa, .gb, .dna) with snapgene.  
 `tree.sh` --> Generate Windows command prompt tree-type output in shell.  
 `gb2dna.sh` --> Convert any accepted file format to SnapGene format (.dna).  
+`xlsx2csv.sh` --> Convert .xlsx excel files to .csv with gnumeric (install: brew install gnumeric)
