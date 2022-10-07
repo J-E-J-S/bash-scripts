@@ -3,7 +3,7 @@
 ## Guide    
 Intended for use with git bash on a windows environment.  
 Move all scripts to `/usr/bin/`  
-Change permission of scripts: `chmod + <script.sh>`  
+Change permission of scripts: `chmod +x <script.sh>`  
 To use script as a command, create alias in .bashrc file  
 e.g `alias snapgene='/usr/bin/snapgene.sh';`    
 
